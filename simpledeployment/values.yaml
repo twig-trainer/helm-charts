@@ -1,4 +1,4 @@
-# Default values for phoenixnap.
+# Default values for simpledeployment.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -11,8 +11,8 @@ image:
   tag: ""
 
 imagePullSecrets: []
-nameOverride: "phoenix-app"
-fullnameOverride: "phoenix-chart"
+nameOverride: "simpledeployment-app"
+fullnameOverride: "simpledeployment-chart"
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -21,7 +21,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: "phoenixap"
+  name: "simpledeployment"
 
 podAnnotations: {}
 
